@@ -7,6 +7,54 @@
   <title>Moja prezentacija</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navigacija.css">
+  <style>
+    @media(max-width: 600px) {
+      .nastim-krug {
+        float: left;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+      }
+
+      .nastim-krug {
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .krug-kolona {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .nastim-krug {
+      align-content: space-evenly;
+    }
+
+    .nastim-naslov {
+      margin: 0;
+    }
+
+    .nastim-krug {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .nastim-slika img {
+      width: 150px;
+      height: 150px;
+      background: darkorange;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .krug-kolona p {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,7 +71,34 @@
   </header>
 
   <main class="container">
-    <h3 id="vrh-strane">O nama</h3>
+    <h1 id="vrh-strane">O nama</h1>
+
+    <h2 class="nastim-naslov">Nas tim</h2>
+    <div class="nastim">
+      <div class="nastim-krug">
+        <div class="krug-kolona">
+          <div class="nastim-slika"><img src="slike/lice1.jpg" alt="" width="200px" height="200px"></div>
+          <p>Ime Prezime</p>
+          <p>Web Developer</p>
+        </div>
+        <div class="krug-kolona">
+          <div class="nastim-slika"><img src="slike/lice2.jpg" alt="" width="200px" height="200px"></div>
+          <p>Ime Prezime</p>
+          <p>Web Developer</p>
+        </div>
+        <div class="krug-kolona">
+          <div class="nastim-slika"><img src="slike/lice3.jpg" alt="" width="200px" height="200px"></div>
+          <p>Ime Prezime</p>
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="istorija">
+      <h2>Istorija</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
 
     <a class="strelica" href="#vrh-strane">&#8613;</a>
   </main>
