@@ -1,33 +1,46 @@
-nav{
-  background: #000;
+nav {
+  background: #4d0000;
 }
 
-nav a{
-  color: #fff;
+header {
+  background: #4d0000;
+}
+
+footer{
+  background: #4d0000;
+}
+
+nav a {
+  color: #000;
   display: block;
   text-decoration: none;
-  padding: 4px 8px;
-  border-bottom: 1px solid grey;
+  padding: 4px 18px;
+  margin: 4px 18px;
+  border: 1px solid grey;
   text-align: center;
+  background: white;
 }
 
-nav a:hover{
-  background: #333;
+nav a:hover {
+  background: #000;
+  color: #fff;
 }
 
-@media(min-width: 600px){
-  nav{
+@media(min-width: 600px) {
+  nav {
     text-align: center;
-    background: #333;
+    background: #4d0000;
   }
-  nav a{
+
+  nav a {
     display: inline-block;
-    border-bottom: 0;
   }
-  nav a:hover{
+
+  nav a:hover {
     background: #000;
   }
-  header{
+
+  header {
     padding-bottom: 8px;
   }
 }
